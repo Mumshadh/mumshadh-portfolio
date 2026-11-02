@@ -63,7 +63,7 @@ function App() {
             transition={{ duration: 0.6 }}
           >
             <span className="status-dot"></span>
-            Open to Software Engineering Internships
+            Available for Software Engineering Internship Opportunities
           </motion.div>
 
           <motion.p
@@ -80,9 +80,9 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.25, duration: 0.7 }}
           >
-            Building ideas
+            Turning ideas
             <br />
-            into <span>digital reality.</span>
+            into <span>useful software.</span>
           </motion.h1>
 
           <motion.p
@@ -91,8 +91,8 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            I'm a Software Engineering undergraduate passionate about
-            developing meaningful applications and creating thoughtful
+            I'm a Software Engineering undergraduate at the Open University of Sri Lanka, interested in application development, databases, and networking.
+            I enjoy turning ideas into practical applications and continuously improving my skills through hands-on projects.
             digital experiences.
           </motion.p>
 
@@ -149,7 +149,7 @@ function App() {
           <div className="visual-card">
             <span className="code-symbol">{"<"}</span>
             <div className="visual-name">MUMSHADH</div>
-            <div className="visual-role">SOFTWARE ENGINEER</div>
+            <div className="visual-role">SOFTWARE ENGINEERING UNDERGRADUATE</div>
             <div className="visual-line"></div>
             <div className="visual-code">
               <span>const</span> passion = "building";
@@ -172,6 +172,34 @@ function App() {
 
         <div className="hero-index">PORTFOLIO — 2026</div>
       </section>
+
+      {/* About Section */}
+<section className="about-section" id="about">
+  <div className="section-heading">
+    <span className="section-label">GET TO KNOW ME</span>
+    <h2>About <span>Me</span></h2>
+  </div>
+
+  <div className="about-content">
+    <p>
+      I'm Mumshadh Deenoori, a third-year Software Engineering
+      undergraduate at the Open University of Sri Lanka.
+    </p>
+
+    <p>
+      I'm interested in application development, databases, and
+      networking. I enjoy exploring new technologies, designing
+      user-friendly interfaces, and building practical software
+      solutions through hands-on projects.
+    </p>
+
+    <p>
+      I'm continuously developing my technical and problem-solving
+      skills while preparing to begin my professional journey
+      as a Software Engineering intern.
+    </p>
+  </div>
+</section>
     </main>
   );
 }
