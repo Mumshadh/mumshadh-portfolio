@@ -873,3 +873,32 @@ button {
     padding: 17px 20px;
   }
 }
+/* Footer */
+.footer {
+  border-top: 1px solid #252535;
+  padding: 28px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  background: #090a0f;
+}
+
+.footer p {
+  color: #71717a;
+  font-size: 13px;
+}
+
+.footer span {
+  color: #a78bfa;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 6%;
+  }
+}

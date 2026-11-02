@@ -23,6 +23,7 @@ function App() {
   ];
 
   return (
+    <>
     <main>
       <nav className="navbar">
         <a href="#home" className="logo">
@@ -109,6 +110,14 @@ function App() {
             <a href="#contact" className="secondary-button">
               Get in Touch
             </a>
+
+            <a 
+             href="/Mumshadh-Deenoori-CV.pdf"
+             download="Mumshadh-Deenoori-CV.pdf"
+             className="secondary-button"
+>
+  Download CV <ArrowUpRight size={18} />
+</a>
           </motion.div>
 
           <motion.div
@@ -393,6 +402,15 @@ function App() {
   </div>
 </section>
     </main>
+<footer className="footer">
+      <p>
+        © {new Date().getFullYear()} Mumshadh Deenoori. All rights reserved.
+      </p>
+      <p>
+        Designed & Built with <span>React</span>
+      </p>
+    </footer>
+  </>
   );
 }
 
