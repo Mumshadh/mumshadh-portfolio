@@ -1,5 +1,5 @@
 
-import { motion } from "motion/react";
+import { easeInOut, motion } from "motion/react";
 import {
   ArrowDown,
   ArrowUpRight,
@@ -19,6 +19,7 @@ function App() {
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Education", href: "#education" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -27,7 +28,7 @@ function App() {
     <main>
       <nav className="navbar">
         <a href="#home" className="logo">
-          M<span>.</span>
+        <img src="/md-logo1.png" alt="Mumshadh Deenoori"/>
         </a>
 
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
@@ -94,7 +95,6 @@ function App() {
           >
             I'm a Software Engineering undergraduate at the Open University of Sri Lanka, interested in application development, databases, and networking.
             I enjoy turning ideas into practical applications and continuously improving my skills through hands-on projects.
-            digital experiences.
           </motion.p>
 
           <motion.div
@@ -149,31 +149,43 @@ function App() {
         </div>
 
         <motion.div
-          className="hero-visual"
-          initial={{ opacity: 0, scale: 0.85 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9, delay: 0.3 }}
-        >
-          <div className="visual-glow"></div>
-          <div className="visual-card">
-            <span className="code-symbol">{"<"}</span>
-            <div className="visual-name">MUMSHADH</div>
-            <div className="visual-role">SOFTWARE ENGINEERING UNDERGRADUATE</div>
-            <div className="visual-line"></div>
-            <div className="visual-code">
-              <span>const</span> passion = "building";
-              <br />
-              <span>const</span> ideas = "creating";
-              <br />
-              <span>return</span> innovation;
-            </div>
-            <div className="visual-bottom">
-              <span>DESIGN · DEVELOP · CREATE</span>
-              <span className="visual-dot"></span>
-            </div>
-          </div>
-          <div className="floating-label">01 / DEVELOPER</div>
-        </motion.div>
+  className="hero-visual"
+  initial={{ opacity: 0, y:35, scale: 0.9 }}
+  animate={{ opacity: 1, y:[0, -12, 0], scale: 1, rotate: [0, 1, 0, -1, 0] }}
+  transition={{
+    opacity: {duration: 0.8},
+    scale:{duration: 0.8},
+    y:{duration: 5, repeat: Infinity, ease: "easeInOut"},
+    rotate:{duration: 8, repeat: Infinity, ease: easeInOut},
+  }}
+>
+  <div className="visual-glow"></div>
+
+  <div className="visual-card">
+    <div className="visual-status">
+      <span className="visual-dot"></span>
+      <span>OPEN TO INTERNSHIP</span>
+    </div>
+
+    <div className="visual-name">MUMSHADH</div>
+    <div className="visual-role">SOFTWARE ENGINEERING UNDERGRADUATE</div>
+
+    <div className="visual-line"></div>
+
+    <div className="visual-code">
+      <span>const</span> passion = "building";
+      <br />
+      <span>const</span> ideas = "creating";
+      <br />
+      <span>return</span> innovation;
+    </div>
+
+    <div className="visual-bottom">
+      <span>BUILD · LEARN · CREATE</span>
+      <span>MD.</span>
+    </div>
+  </div>
+</motion.div>
 
         <a href="#about" className="scroll-indicator">
           <ArrowDown size={16} /> SCROLL TO EXPLORE
