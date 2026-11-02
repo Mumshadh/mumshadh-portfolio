@@ -133,10 +133,11 @@ function App() {
 
             <a 
              href="/Mumshadh-Deenoori-CV.pdf"
-             download="Mumshadh-Deenoori-CV.pdf"
+             target="_blank"
+             rel="noreferrer"
              className="secondary-button"
 >
-  Download CV <ArrowUpRight size={18} />
+  View / Download CV <ArrowUpRight size={18} />
 </a>
           </motion.div>
 
