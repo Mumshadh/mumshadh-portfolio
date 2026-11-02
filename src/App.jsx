@@ -200,6 +200,56 @@ function App() {
     </p>
   </div>
 </section>
+
+{/* Skills Section */}
+<section className="skills-section" id="skills">
+  <div className="section-heading">
+    <span className="section-label">WHAT I WORK WITH</span>
+    <h2>My <span>Skills</span></h2>
+    <p>Technologies and tools I've explored through learning and projects.</p>
+  </div>
+
+  <div className="skills-grid">
+    <div className="skill-card">
+      <h3>Programming & Development</h3>
+      <div className="skill-tags">
+        <span>Java</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>React</span>
+        <span>Android Development</span>
+      </div>
+    </div>
+
+    <div className="skill-card">
+      <h3>Database Management</h3>
+      <div className="skill-tags">
+        <span>MySQL</span>
+        <span>SQLite</span>
+        <span>SQL</span>
+      </div>
+    </div>
+
+    <div className="skill-card">
+      <h3>Networking & Systems</h3>
+      <div className="skill-tags">
+        <span>Computer Networking</span>
+        <span>Cisco Packet Tracer</span>
+        <span>MQTT</span>
+      </div>
+    </div>
+
+    <div className="skill-card">
+      <h3>Design & Tools</h3>
+      <div className="skill-tags">
+        <span>Figma</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Android Studio</span>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
   );
 }
