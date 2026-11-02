@@ -47,9 +47,12 @@ function App() {
     <>
     <main>
       <nav className="navbar">
-        <a href="#home" className="logo">
-        <img src="/md-logo1.png" alt="Mumshadh Deenoori"/>
-        </a>
+  <a href="#home" className="logo">
+    <img
+      src={`${import.meta.env.BASE_URL}md-logo1.png`}
+      alt="Mumshadh Deenoori"
+    />
+  </a>
 
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
           {navLinks.map((link) => (
@@ -132,7 +135,7 @@ function App() {
             </a>
 
             <a 
-             href="/Mumshadh-Deenoori-CV.pdf"
+             href={`${import.meta.env.BASE_URL}Mumshadh-Deenoori-CV.pdf`}
              target="_blank"
              rel="noreferrer"
              className="secondary-button"
