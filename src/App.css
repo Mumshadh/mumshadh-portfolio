@@ -609,3 +609,125 @@ button {
     padding: 24px;
   }
 }
+/* Projects Section */
+.projects-section {
+  padding: 100px 8%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-section .section-heading > p {
+  color: #a1a1aa;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.project-card {
+  background: #11121a;
+  border: 1px solid #252535;
+  border-radius: 18px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #a78bfa;
+}
+
+.project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.project-number {
+  color: #a78bfa;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.project-status {
+  color: #fbbf24;
+  background: #2b2415;
+  border: 1px solid #51401c;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.project-status.completed {
+  color: #86efac;
+  background: #14291e;
+  border-color: #245437;
+}
+
+.project-card h3 {
+  color: #ffffff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #a1a1aa;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 25px;
+}
+
+.project-tech span {
+  color: #c4b5fd;
+  background: #1c1b2b;
+  border: 1px solid #39334f;
+  border-radius: 7px;
+  padding: 7px 11px;
+  font-size: 12px;
+}
+
+.project-card a {
+  color: #a78bfa;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  width: fit-content;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #ffffff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 75px 6%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+}

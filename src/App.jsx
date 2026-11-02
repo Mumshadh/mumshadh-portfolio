@@ -250,6 +250,68 @@ function App() {
     </div>
   </div>
 </section>
+{/* Projects Section */}
+<section className="projects-section" id="projects">
+  <div className="section-heading">
+    <span className="section-label">MY WORK</span>
+    <h2>Featured <span>Projects</span></h2>
+    <p>A selection of projects I've developed and worked on.</p>
+  </div>
+
+  <div className="projects-grid">
+
+    {/* CrewConnect */}
+    <div className="project-card">
+      <div className="project-top">
+        <span className="project-number">01</span>
+        <span className="project-status">In Development</span>
+      </div>
+
+      <h3>CrewConnect</h3>
+      <p>
+        An Android application designed to connect aspiring filmmakers
+        and creative professionals. It aims to help users find collaborators,
+        create projects, share work, and discover equipment and locations.
+      </p>
+
+      <div className="project-tech">
+        <span>Java</span>
+        <span>Android</span>
+        <span>SQLite</span>
+        <span>UI/UX</span>
+      </div>
+
+      <a href="https://github.com/Mumshadh" target="_blank" rel="noreferrer">
+        View on GitHub ↗
+      </a>
+    </div>
+
+    {/* MiniMates */}
+    <div className="project-card">
+      <div className="project-top">
+        <span className="project-number">02</span>
+        <span className="project-status completed">Completed</span>
+      </div>
+
+      <h3>MiniMates</h3>
+      <p>
+        A completed project that demonstrates my experience in
+        application development, interface design, and translating
+        ideas into a working software solution.
+      </p>
+
+      <div className="project-tech">
+        <span>Application Development</span>
+        <span>UI/UX</span>
+      </div>
+
+      <a href="https://github.com/Mumshadh/Mini-Mates" target="_blank" rel="noreferrer">
+        View on GitHub ↗
+      </a>
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }
