@@ -8,11 +8,31 @@ import {
   Menu,
   X,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  useEffect(() => {
+  const sections = document.querySelectorAll("main section[id]");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          window.history.replaceState(null, "", `#${entry.target.id}`);
+        }
+      });
+    },
+    {
+      rootMargin: "-30% 0px -60% 0px",
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+
+  return () => observer.disconnect();
+}, []);
 
   const navLinks = [
     { name: "Home", href: "#home" },
