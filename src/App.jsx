@@ -354,6 +354,44 @@ function App() {
 
   </div>
 </section>
+{/* Contact Section */}
+<section className="contact-section" id="contact">
+  <div className="section-heading">
+    <span className="section-label">GET IN TOUCH</span>
+    <h2>Let's <span>Connect</span></h2>
+    <p>
+      I'm currently looking for Software Engineering Internship
+      opportunities. Feel free to reach out!
+    </p>
+  </div>
+
+  <div className="contact-content">
+    <a href="mailto:jmmumshadhdeenoori@gmail.com" className="contact-link">
+      <span>Email Me</span>
+      <span>↗</span>
+    </a>
+
+    <a
+      href="https://github.com/Mumshadh"
+      target="_blank"
+      rel="noreferrer"
+      className="contact-link"
+    >
+      <span>GitHub</span>
+      <span>↗</span>
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/mumshadh-deenoori-a26651315/"
+      target="_blank"
+      rel="noreferrer"
+      className="contact-link"
+    >
+      <span>LinkedIn</span>
+      <span>↗</span>
+    </a>
+  </div>
+</section>
     </main>
   );
 }
