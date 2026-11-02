@@ -312,6 +312,48 @@ function App() {
 
   </div>
 </section>
+{/* Education & Experience Section */}
+<section className="journey-section" id="education">
+  <div className="section-heading">
+    <span className="section-label">MY JOURNEY</span>
+    <h2>Education & <span>Experience</span></h2>
+    <p>My academic background and practical learning journey.</p>
+  </div>
+
+  <div className="journey-grid">
+
+    {/* Education */}
+    <div className="journey-card">
+      <span className="journey-category">EDUCATION</span>
+      <div className="journey-item">
+        <span className="journey-year">2023 – Present</span>
+        <h3>Bachelor of Software Engineering (Hons.)</h3>
+        <h4>The Open University of Sri Lanka</h4>
+        <p>
+          Currently pursuing my third year, developing knowledge
+          in software development, databases, networking, and
+          computer systems.
+        </p>
+      </div>
+    </div>
+
+    {/* Practical Experience */}
+    <div className="journey-card">
+      <span className="journey-category">PRACTICAL EXPERIENCE</span>
+      <div className="journey-item">
+        <span className="journey-year">Academic & Personal Projects</span>
+        <h3>Software Development</h3>
+        <h4>Hands-on Learning</h4>
+        <p>
+          Gaining practical experience by developing applications,
+          working with databases, exploring networking technologies,
+          and creating user interfaces through Figma.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }

@@ -731,3 +731,90 @@ button {
     padding: 25px;
   }
 }
+/* Education & Experience Section */
+.journey-section {
+  padding: 100px 8%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.journey-section .section-heading > p {
+  color: #a1a1aa;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.journey-card {
+  background: #11121a;
+  border: 1px solid #252535;
+  border-radius: 18px;
+  padding: 32px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.journey-card:hover {
+  border-color: #a78bfa;
+  transform: translateY(-5px);
+}
+
+.journey-category {
+  color: #a78bfa;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.journey-item {
+  margin-top: 30px;
+  border-left: 2px solid #39334f;
+  padding-left: 20px;
+}
+
+.journey-year {
+  color: #a78bfa;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.journey-item h3 {
+  color: #ffffff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  margin: 12px 0 8px;
+}
+
+.journey-item h4 {
+  color: #c4b5fd;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.journey-item p {
+  color: #a1a1aa;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .journey-section {
+    padding: 75px 6%;
+  }
+
+  .journey-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .journey-card {
+    padding: 25px;
+  }
+}
